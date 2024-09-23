@@ -12,6 +12,16 @@ namespace ListExample
         public string Name { get; set; }
         public double Salary { get; set; }
 
+        public Employee(int id, string name, double salary)
+        {
+            Id = id;
+            Name = name;
+            Salary = salary;
+        }
 
+        public override string ToString()
+        {
+            return $"{Id,5} {Name,-10} {Salary,10:C}";
+        }
     }
 }
