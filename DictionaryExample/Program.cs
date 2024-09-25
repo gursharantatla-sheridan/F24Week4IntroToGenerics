@@ -25,6 +25,24 @@
             }
             else
                 Console.WriteLine("Invalid KEY. Please try again.");
+
+            // loop through keys and values in a dictionary
+            foreach (var kvp in dictEmps)
+            {
+                key = kvp.Key;
+                Employee emp = kvp.Value;
+
+                Console.Write(key + " - ");
+                Console.WriteLine(emp);
+            }
+
+            Console.WriteLine("\n\n");
+
+            // loop through only values in a dictionary
+            foreach (var em in dictEmps.Values)
+            {
+                Console.WriteLine(em);
+            }
         }
     }
 }
