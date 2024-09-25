@@ -32,6 +32,38 @@
             Console.WriteLine("\nTotal: " + stack.Count);
             foreach (int i in stack)
                 Console.WriteLine(i);
+
+
+            Console.WriteLine("\n\n\n\n");
+
+
+
+            // Queue example
+
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+
+            Console.WriteLine("Total: " + queue.Count);
+            foreach (int i in queue)
+                Console.WriteLine(i);
+
+            //num = queue[1];
+
+            num = queue.Dequeue();
+            Console.WriteLine("\nNum = " + num);
+
+            Console.WriteLine("\nTotal: " + queue.Count);
+            foreach (int i in queue)
+                Console.WriteLine(i);
+
+            num = queue.Peek();
+            Console.WriteLine("\nNum = " + num);
+
+            Console.WriteLine("\nTotal: " + queue.Count);
+            foreach (int i in queue)
+                Console.WriteLine(i);
         }
     }
 }
